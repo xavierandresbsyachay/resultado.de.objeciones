@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard demostrativo listo para GitHub Pages">
+  <title>Panel de indicadores | Demo</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">◈</span><span>DATA<span class="accent">PANEL</span><small>Dashboard · Versión demo</small></span></div>
+      <div class="section-label">NAVEGACIÓN</div>
+      <a class="nav active" href="#resumen">▦ &nbsp; Vista general</a>
+      <a class="nav" href="#tendencia">▤ &nbsp; Tendencia</a>
+      <a class="nav" href="#registros">☷ &nbsp; Registros</a>
+      <div class="sidebar-bottom"><span class="pulse"></span> Fuente: datos ficticios<br><small>Sin conexión a SharePoint</small></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><div class="eyebrow">PANEL DE CONTROL / DEMOSTRACIÓN</div><h1>Resumen de indicadores</h1><p>Visualiza, filtra y explora tus datos desde un solo lugar.</p></div><span class="chip">● Modo demostración</span></header>
+      <section class="toolbar" aria-label="Filtros"><label>Mes <select id="mes"><option value="">Todos los meses</option></select></label><label>Estado <select id="estado"><option value="">Todos los estados</option><option>Completado</option><option>Pendiente</option><option>En revisión</option></select></label><button id="limpiar">Limpiar filtros ↻</button></section>
+      <section class="kpis" id="resumen"><article class="kpi"><span>Total de registros</span><strong id="total">–</strong><small>Filtrados actualmente</small></article><article class="kpi"><span>Completados</span><strong id="completados">–</strong><small>Estado completado</small></article><article class="kpi"><span>Pendientes</span><strong id="pendientes">–</strong><small>Acciones pendientes</small></article><article class="kpi"><span>Tasa de finalización</span><strong id="tasa">–</strong><small>Sobre registros visibles</small></article></section>
+      <section class="charts" id="tendencia"><article class="panel"><div class="panel-head"><div><h2>Evolución mensual</h2><p>Volumen de registros por mes</p></div></div><div class="chart-holder"><canvas id="graficoMensual" aria-label="Gráfico mensual" role="img"></canvas></div></article><article class="panel"><div class="panel-head"><div><h2>Distribución por estado</h2><p>Proporción de registros</p></div></div><div class="chart-holder"><canvas id="graficoEstados" aria-label="Gráfico de estados" role="img"></canvas></div></article></section>
+      <section class="panel table-panel" id="registros"><div class="panel-head"><div><h2>Detalle de registros</h2><p>Datos ficticios. Aquí aparecerán los registros autorizados de tu Excel.</p></div><button id="csv">Exportar CSV ↓</button></div><div class="scroll"><table><thead><tr><th>ID</th><th>Mes</th><th>Área</th><th>Estado</th><th>Valor</th></tr></thead><tbody id="tabla"></tbody></table></div><p id="vacio" hidden>No hay registros para los filtros seleccionados.</p></section>
+      <footer>Plantilla de demostración · No contiene información real ni se conecta a Microsoft 365.</footer>
+    </main>
+  </div>
+</body>
+</html>
