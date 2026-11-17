@@ -1,0 +1,14 @@
+[
+  {"id":"REG-001","mes":"Enero","area":"Administración","estado":"Completado","valor":1200},
+  {"id":"REG-002","mes":"Enero","area":"Operaciones","estado":"Pendiente","valor":780},
+  {"id":"REG-003","mes":"Febrero","area":"Administración","estado":"Completado","valor":980},
+  {"id":"REG-004","mes":"Febrero","area":"Finanzas","estado":"En revisión","valor":1580},
+  {"id":"REG-005","mes":"Marzo","area":"Operaciones","estado":"Completado","valor":1140},
+  {"id":"REG-006","mes":"Marzo","area":"Finanzas","estado":"Pendiente","valor":630},
+  {"id":"REG-007","mes":"Abril","area":"Administración","estado":"Completado","valor":2100},
+  {"id":"REG-008","mes":"Abril","area":"Operaciones","estado":"Completado","valor":1270},
+  {"id":"REG-009","mes":"Mayo","area":"Finanzas","estado":"En revisión","valor":1520},
+  {"id":"REG-010","mes":"Mayo","area":"Operaciones","estado":"Pendiente","valor":970},
+  {"id":"REG-011","mes":"Junio","area":"Finanzas","estado":"Completado","valor":1840},
+  {"id":"REG-012","mes":"Junio","area":"Administración","estado":"Completado","valor":950}
+]
